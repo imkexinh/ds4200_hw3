@@ -1,0 +1,260 @@
+/* Custom Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif; /* Custom Font */
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+/* Custom Color Scheme */
+:root {
+    --nintendo-red: #e60012;
+    --nintendo-blue: #00a8e8;
+    --nintendo-light: #f5f5f5;
+    --nintendo-dark: #1f1f1f;
+    --animal-crossing-green: #74c365;
+    --mario-red: #e4000f;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--nintendo-red);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--nintendo-dark);
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Section */
+.intro {
+    margin-bottom: 3rem;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--nintendo-red);
+}
+
+.intro p {
+    margin-bottom: 1rem;
+}
+
+/* Games Page */
+.games-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.games-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--nintendo-dark);
+}
+
+.game {
+    margin-bottom: 4rem;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game h2 {
+    padding: 1.5rem;
+    background-color: var(--nintendo-red);
+    color: white;
+    font-size: 1.8rem;
+}
+
+.game:nth-child(1) h2 {
+    background-color: var(--animal-crossing-green);
+}
+
+.game:nth-child(2) h2 {
+    background-color: var(--mario-red);
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-description {
+    padding: 2rem;
+}
+
+.game-description p {
+    margin-bottom: 1rem;
+}
+
+.game-description h3 {
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+    color: var(--nintendo-dark);
+}
+
+.game-description ul,
+.game-description ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.game-description li {
+    margin-bottom: 0.5rem;
+}
+
+/* Custom Border-Radius and Box Shadows */
+img {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    background-color: var(--nintendo-dark);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 1.5rem;
+}
+
+.contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.contact-links li {
+    margin: 0 1rem;
+}
+
+.contact-links a {
+    color: var(--nintendo-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color: var(--nintendo-red);
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    .nav-links li {
+        margin: 0 0.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .game h2 {
+        font-size: 1.5rem;
+    }
+}
