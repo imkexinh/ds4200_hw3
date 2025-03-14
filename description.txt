@@ -1,0 +1,18 @@
+hyperlink: https://imkexinh.github.io/ds4200_hw3/
+Styling:
+- Custom font "Quicksand" imported from Google Fonts for the entire website
+- Custom color scheme using CSS variables with Nintendo-themed colors (nintendo-red, nintendo-blue, animal-crossing-green, mario-red)
+- Background color customization for body (#f8f8f8) and different sections
+- Custom navigation styling with hover effects and active state indicators
+- Responsive layout with maximum width containers and appropriate padding
+- Card-style design for game sections with rounded corners and shadows
+- Different header colors for Animal Crossing (green) and Mario (red) sections
+- Custom transitions and hover effects for interactive elements
+- Image hover effects with smooth scaling animation
+- Sticky header that remains at the top during page scrolling
+- Consistent spacing with margins and padding throughout
+- Footer styling with custom colors and link hover effects
+- Custom border radius (8px) applied to images and UI components
+- Box shadows applied to create depth on various elements
+- Responsive design with media queries for smaller screens
+- Text color customization for different elements (headings, paragraphs, links)
